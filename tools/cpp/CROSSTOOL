@@ -101,9 +101,9 @@ toolchain {
   compiler_flag: "-fdiagnostics-color=always"
 
   # All warnings are enabled. Maybe enable -Werror as well?
-  #compiler_flag: "-Wall"
+  compiler_flag: "-Wall"
   # Enable a few more warnings that aren't part of -Wall.
-  compiler_flag: "-Wunused-parameter"
+  #compiler_flag: "-Wunused-parameter"
   # But disable some that are problematic.
   compiler_flag: "-Wno-sequence-point" # has false positives
   
@@ -208,7 +208,7 @@ toolchain {
   compiler_flag: "-fcolor-diagnostics"
 
   # All warnings are enabled. Maybe enable -Werror as well?
-  #compiler_flag: "-Wall"
+  compiler_flag: "-Wall"
   # Enable a few more warnings that aren't part of -Wall.
   compiler_flag: "-Wthread-safety"
   compiler_flag: "-Wself-assign"
